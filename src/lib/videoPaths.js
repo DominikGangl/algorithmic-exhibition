@@ -2,8 +2,8 @@ export const videoPaths = {
     intro: {
         videoUrl: '/videos/intro.mov',
         nextOptions: [
-            { id: 'video1', text: 'Ask about redacted documents' },
-            { id: 'video1', text: 'Ask about research foundation' }
+            { id: 'video1', text: 'Ask about the system' },
+            { id: 'video1', text: 'Ask about the avatar' }
         ]
     },
     video1: {
@@ -31,7 +31,7 @@ export const videoPaths = {
         videoUrl: '/videos/4.mov',
         nextOptions: [
             { id: 'video6', text: 'Ask about CEAS reform' },
-            { id: 'video8', text: 'Ask about redacted papers' }
+            { id: 'video11', text: 'Ask about critics of iBorderCtrl' }
         ]
     },
     video5: {
@@ -86,7 +86,9 @@ export const videoPaths = {
     // … add the remaining videos up to video14
     outro: {
         videoUrl: '/videos/outro.mov',
-        nextOptions: [] // terminal video—no next options
+        nextOptions: [
+            { id: 'intro', text: 'Restart' },
+        ] // terminal video—no next options
     }
     // You can add more videos as needed.
 };
