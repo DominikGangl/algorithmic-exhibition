@@ -84,7 +84,7 @@
 <!-- The overall container is sized for a 1080x1920-like screen -->
 <main class="relative flex h-screen w-screen flex-col">
 	<button
-		class="absolute top-3 left-3 z-20 rounded-md border-2 border-gray-300 px-4 py-2 text-gray-100 hover:bg-gray-900"
+		class="absolute top-3 left-3 z-20 rounded-md border-2 border-gray-300 px-3 py-1 text-gray-100 hover:bg-gray-900"
 		on:click={() => window.location.reload()}
 	>
 		Restart
@@ -92,12 +92,12 @@
 
 	{#if !currentVideoId}
 		<!-- Initial screen: only show the "Start Tribunal" button -->
-		<div class="flex h-screen flex-grow items-center justify-center bg-black text-5xl">
+		<div class="bg flex h-screen flex-grow items-center justify-center bg-black text-5xl">
 			<button
 				on:click={startTribunal}
-				class="w-[40%] rounded-xl border-2 border-gray-300 px-8 py-8 text-gray-100 hover:bg-gray-900"
+				class="w-[50%] rounded-xl border-2 border-gray-300 px-8 py-10 text-gray-100 hover:bg-gray-900"
 			>
-				Start Tribunal
+				Click to Start Tribunal
 			</button>
 		</div>
 	{:else}
@@ -158,5 +158,10 @@
 <style>
 	button:hover {
 		cursor: pointer;
+	}
+	.bg {
+		background-image: url('/images/bg.png');
+		background-position: center;
+		background-size: auto 100%;
 	}
 </style>

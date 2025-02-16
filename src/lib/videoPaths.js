@@ -65,22 +65,19 @@ export const videoPaths = {
     video9: {
         videoUrl: '/videos/9.mov',
         nextOptions: [
-            { id: 'outro', text: 'End interrogation' },
-            { id: 'outro', text: 'Finish for today' }
+            { id: 'outro', text: 'Proceed to closing statement' },
         ]
     },
     video10: {
         videoUrl: '/videos/10.mov',
         nextOptions: [
-            { id: 'outro', text: 'End interrogation' },
-            { id: 'outro', text: 'Finish for today' }
+            { id: 'outro', text: 'Proceed to closing statement' },
         ]
     },
     video11: {
         videoUrl: '/videos/11.mov',
         nextOptions: [
-            { id: 'outro', text: 'End interrogation' },
-            { id: 'outro', text: 'Finish for today' }
+            { id: 'outro', text: 'Proceed to closing statement' },
         ]
     },
     // … add the remaining videos up to video14
